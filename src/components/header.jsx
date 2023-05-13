@@ -6,6 +6,9 @@ import BottomRightBody from "../assets/png3.png";
 import TopLeftBody from "../assets/png4.png";
 import TeameWork from '../assets/Team work fv.png'
 import SmapllNavbar from "../components/SmallNavbar";
+import { Link } from "react-router-dom";
+
+
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -44,18 +47,18 @@ const Header = () => {
             <div className="p-2 md:flex md:justify-between md:block hidden ">
               <div className="flex items-center z-10">
                 <ul>
-                  <li className="m-2 text-xl pl-4 items-center ">Home</li>
+                <Link to='/home'> <li className="m-2 text-xl pl-4 items-center ">Home</li></Link>   
                 </ul>
               </div>
               <div className="z-10">
                 <ul className="flex gap-10">
-                  <li className="m-2 text-xl pl-4 items-center ">Blog</li>
+                <Link to='/home'><li className="m-2 text-xl pl-4 items-center ">Blog</li></Link> 
 
-                  <li className="m-2 text-xl pl-4 items-center ">About us</li>
+                 <Link to='/home'> <li className="m-2 text-xl pl-4 items-center ">About us</li></Link>
 
-                  <li className="m-2 text-xl pl-4 items-center ">Team</li>
+                 <Link to='/home'>  <li className="m-2 text-xl pl-4 items-center ">Team</li></Link>
 
-                  <li className="m-2 text-xl pl-4 items-center ">Contact us</li>
+                 <Link to='/home'>  <li className="m-2 text-xl pl-4 items-center ">Contact us</li></Link>
                 </ul>
               </div>
             </div>
@@ -64,7 +67,7 @@ const Header = () => {
 
           <div className="w-full h-[90%] md:flex flex-col sm:flex-row-reverse">
             <div className="w-full md:w-1/2 h-[100%] z-10 flex justify-center">
-              <div className="md:w-1/2 h-[40%] my-auto">
+              <div className="md:w-1/2 h-[40%] md:my-auto mt-10">
                 <img src={TeameWork} alt="img" className="w-80" />
               </div>
             </div>
